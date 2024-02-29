@@ -30,8 +30,18 @@ body {
   max-width: 1500px;
   margin: 0 auto;
   /* debug */
-  background-color: brown;
+  background-color: lightgreen;
   height: 400px;
+}
+
+.container-small {
+  width: 70%;
+  max-width: 1100;
+  margin: 0 auto;
+
+  /* debug  */
+  background-color: lightcoral;
+  height: 600px;
 }
 
 /* Header  */
@@ -46,4 +56,11 @@ body {
 
   /* debug */
   background-color: brown;
+}
+
+/* .Main  */
+.hero {
+  /* debug */
+  background-color: blue;
+  padding: 60px 0;
 }
