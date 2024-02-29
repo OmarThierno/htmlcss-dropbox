@@ -9,3 +9,41 @@
 body {
   font-family: 'Open Sans', sans-serif;
 }
+
+/* Utilities  */
+.flex {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.centering {
+  justify-content: center;
+  align-items: center;
+}
+
+/* Layout  */
+.container-big {
+  width: 80%;
+  max-width: 1500px;
+  margin: 0 auto;
+  /* debug */
+  background-color: brown;
+  height: 400px;
+}
+
+/* Header  */
+.header {
+  background-color: aqua;
+  height: 100px;
+}
+
+.header-left,
+.header-right {
+  width: 30%;
+
+  /* debug */
+  background-color: brown;
+}
