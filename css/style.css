@@ -57,10 +57,14 @@ body {
   display: inline-block;
 }
 
-
 .a-inherit-color {
   color: inherit;
   text-decoration: none;
+}
+
+.mrg-t-b-30px {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /* Layout  */
@@ -69,8 +73,8 @@ body {
   max-width: 1500px;
   margin: 0 auto;
   /* debug */
-  background-color: lightgreen;
-  height: 400px;
+  /* background-color: lightgreen; */
+  height: 900px;
 }
 
 .container-small {
@@ -107,7 +111,7 @@ body {
 .btn {
   background-color: #0061FF;
   color: white;
-  padding: 15px 30px;
+  padding: 10px 20px;
 }
 
 /* .Main  */
@@ -115,11 +119,27 @@ main {
   padding: 100px 0 20px;
 }
 
+/* Hero  */
 .hero {
   /* debug */
-  background-color: blue;
+  background-color: #B4D0E7;
   padding: 60px 0;
 }
+
+.hero-title {
+  font-size: 6rem;
+}
+
+.hero-body-left {
+  width: 30%;
+  font-size: 1.2rem;
+}
+
+.hero-body-right {
+  flex-wrap: 1;
+}
+
+
 
 .piano-business {
   /* debug */
