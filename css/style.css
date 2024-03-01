@@ -75,6 +75,10 @@ body {
   margin-bottom: 20px;
 }
 
+.mrg-b-50px {
+  margin-bottom: 50px;
+}
+
 .mrg-b-130px {
   margin-bottom: 130px;
 }
@@ -83,18 +87,21 @@ body {
   margin-right: 30px;
 }
 
-.col {
-  width: calc(100% / 3);
-}
-
 .secondary-title {
   font-size: 2.5rem;
+  margin-bottom: 70px;
 }
 
 .btn {
   background-color: #0061FF;
   color: white;
   padding: 10px 20px;
+  transition: opacity 0.15;
+}
+
+.btn:hover,
+.btn-piano-b:hover {
+  opacity: 0.7;
 }
 
 .btn-piano-b {
@@ -103,6 +110,19 @@ body {
   color: white;
   text-align: center;
   padding: 10px 0;
+  transition: opacity 0.15;
+}
+
+.border-grey {
+  border: 1px solid grey;
+}
+
+.border-bottom-grey {
+  border-bottom: 1px solid grey;
+}
+
+.check {
+  color: #0364FF;
 }
 
 /* Layout  */
@@ -116,6 +136,15 @@ body {
   width: 70%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.col {
+  width: calc(100% / 3);
+}
+
+.col-dropbox-business {
+  width: calc(100% / 3 - 150px / 3);
+
 }
 
 /* Header  */
@@ -139,6 +168,17 @@ body {
   color: #6D6D6D;
 }
 
+.header-list ul li {
+  padding: 20px 0;
+  transition: color 0.15s, border-bottom 0.15s, padding 0.15s;
+}
+
+.header-list ul li:hover{
+  color: #6c1c1c;
+  border-bottom: 2px solid rgb(5, 121, 222);
+  padding: 16px 0;
+}
+
 
 /* .Main  */
 main {
@@ -149,6 +189,7 @@ main {
 .hero {
   background-color: #B4D0E7;
   padding: 60px 0;
+  height: 920px;
 }
 
 .hero-title {
@@ -171,15 +212,17 @@ main {
 
 /* Piano business  */
 .piano-business {
-  padding: 60px 0;
+  padding-top: 250px;
 }
 
 .radio {
   font-size: 1.2rem;
+  margin-bottom: 50px;
 }
 
 .piano-b-middle {
   flex-grow: 1;
+  margin-bottom: 80px;
 }
 
 .col-header-p-b {
@@ -187,7 +230,9 @@ main {
   padding: 15px 0;
 }
 
-.col-body-p-b, .team-body .col {
+.col-body-p-b,
+.box-team-big,
+.team-body .col {
   padding: 40px;
 }
 
@@ -215,6 +260,14 @@ main {
   margin-bottom: 50px;
 }
 
+.col-body-p-b .btn-piano-b {
+  margin-bottom: 50px;
+}
+
+.hr-piano-business {
+  width: 40px;
+}
+
 .box-team-big {
   width: 67%;
 }
@@ -230,11 +283,11 @@ main {
 }
 
 .partner-box-40 {
-  padding: 40px;
+  padding: 60px;
   width: 40%;
 }
 
-
+/* Dropbox business  */
 .dropbox-business {
   /* debug */
   padding: 60px 0;
@@ -246,10 +299,13 @@ main {
 }
 
 /* Logos  */
-.logos {
-  width: 100%;
-  height: 500px;
-  background-color: red;
+
+.big-square {
+  width: calc(100% / 3);
+}
+
+.mini-square {
+  width: 50%;
 }
 
 .call-to-action {
