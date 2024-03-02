@@ -189,7 +189,6 @@ main {
 .hero {
   background-color: #B4D0E7;
   padding: 60px 0;
-  height: 920px;
 }
 
 .hero-title {
@@ -203,7 +202,14 @@ main {
 }
 
 .hero-body-right {
-  flex-wrap: 1;
+  position: relative;
+  width: 70%;
+}
+
+.hero-img {
+  position: absolute;
+  left: 0;
+  top: 10px;
 }
 
 .arrow-icon {
@@ -293,12 +299,22 @@ main {
   padding: 60px 0;
 }
 
+/* Users-use-dropbox */
 .users-use-dropbox {
   /* debug */
   padding: 60px 0;
 }
 
+.users-use-dropbox-section h2.secondary-title {
+  max-width: 700px;
+  line-height: 60px;
+}
+
 /* Logos  */
+.logos {
+  /* debug */
+  padding: 60px 0;
+}
 
 .big-square {
   width: calc(100% / 3);
@@ -308,17 +324,56 @@ main {
   width: 50%;
 }
 
+/* Call-to-action  */
 .call-to-action {
+  background-color: #B4D0E7;
   /* debug */
-  background-color: rgb(32, 178, 168);
   padding: 60px 0;
 }
 
+.call-to-action-section h3 {
+  font-size: 2.5rem;
+  color: #610A2E;
+  max-width: 500px;
+  line-height: 60px;
+}
+
+.call-to-action-section div.col {
+  padding-top: 50px;
+}
+
+/* frequent ask questions  */
 .faq {
   /* debug */
-  background-color: rgb(178, 122, 32);
   padding: 60px 0;
 }
+
+.frequent-questions-section h3 {
+  border-bottom: 2px solid grey;
+  padding: 50px 0;
+}
+
+.questions-answers {
+  padding: 40px 0;
+  border-bottom: 1px solid grey;
+  transition: opacity 0.15;
+}
+
+.questions-answers:hover .answers {
+  opacity: 1;
+}
+
+.requests {
+  font-size: 1.2rem;
+  font-weight: 800;
+  padding-bottom: 20px
+}
+
+.answers {
+  opacity: 0;
+}
+
+
 
 /* Footer  */
 .footer {
@@ -329,6 +384,16 @@ main {
   padding: 60px 0;
 }
 
-.footer-list li {
+.footer-list ul li {
+  padding-bottom: 20px;
+  transition: color 0.15s, text-decoration 0.15;
+}
+
+.footer-list ul li:hover {
+  color: rgb(165, 165, 165);
+  text-decoration: underline;
+}
+
+.footer-list h5 {
   margin-bottom: 20px;
 }
