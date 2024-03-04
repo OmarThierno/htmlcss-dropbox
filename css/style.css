@@ -410,13 +410,16 @@ div.big-square.bg-light-grey {
 }
 
 .questions-answers {
-  padding: 40px 0;
+  padding: 40px 0 20px;
   border-bottom: 1px solid grey;
   transition: opacity 0.15;
+  position: relative;
 }
 
 .questions-answers:hover .answers {
   opacity: 1;
+  position: relative;
+  animation: answers-move 0.2s;
 }
 
 .requests {
@@ -427,6 +430,21 @@ div.big-square.bg-light-grey {
 
 .answers {
   opacity: 0;
+  position: absolute;
+}
+
+@keyframes answers-move {
+  0% {left: 0px; top: -15px;}
+  100% {left: 0px; top: 0px;}
+}
+
+.chevron {
+  font-size: 2rem;
+  transition: tranform 0.15s;
+}
+
+.questions-answers:hover .chevron{
+  transform: rotate(0.5turn);
 }
 
 /* Footer  */
