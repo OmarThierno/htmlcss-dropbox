@@ -100,7 +100,6 @@ body {
   opacity: 0.7;
 }
 
-
 .btn-piano-b {
   display: block;
   background-color: #0061FF;
@@ -132,6 +131,10 @@ body {
 
 .check {
   color: #0364FF;
+}
+
+.overflow {
+  overflow-y: scroll;
 }
 
 /* Layout  */
@@ -289,7 +292,6 @@ main {
 
 /* Partner  */
 .partner {
-  /* debug */
   padding: 60px 0;
 }
 
@@ -304,13 +306,11 @@ main {
 
 /* Dropbox business  */
 .dropbox-business {
-  /* debug */
   padding: 60px 0;
 }
 
 /* Users-use-dropbox */
 .users-use-dropbox {
-  /* debug */
   padding: 60px 0;
 }
 
@@ -331,6 +331,7 @@ div.big-square.bg-light-grey {
 
 .mini-square {
   width: 50%;
+  padding: 20px;
   aspect-ratio: 1;
   display: flex;
   justify-content: center;
@@ -338,7 +339,7 @@ div.big-square.bg-light-grey {
 }
 
 .square-img {
-  width: 200px;
+  width: 150px;
   filter: invert(100%) sepia(0%) saturate(29%) hue-rotate(87deg) brightness(108%) contrast(106%);
 }
 
@@ -383,7 +384,6 @@ div.big-square.bg-light-grey {
 /* Call-to-action  */
 .call-to-action {
   background-color: #B4D0E7;
-  /* debug */
   padding: 60px 0;
 }
 
@@ -400,7 +400,6 @@ div.big-square.bg-light-grey {
 
 /* frequent ask questions  */
 .faq {
-  /* debug */
   padding: 60px 0;
 }
 
@@ -450,8 +449,6 @@ div.big-square.bg-light-grey {
 /* Footer  */
 #footer {
   color: #ffffff;
-
-  /* debug */
   background-color: black;
   padding: 60px 0;
 }
